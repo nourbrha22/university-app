@@ -1,22 +1,12 @@
 import Image from '../assets/image.jpg'
 
-function StudentCard() {
-    
-    const etudiant = {
-        nomPrenom: "Nour Ben Rhouma",
-        email: "nour.benrhouma661@gmail.com",
-        telephone: "+216 40 237 020",
-        filiere: "Génie logiciel et système d'information",
-        image: Image,
-        anneEtude: "2ème année",
-        groupe: "GLSI 2",
-        ville: "Mahdia"
-    }
+function StudentCard({etudiant}) {
+
 
     return (
     <div className="student-card">
         <div>
-            <img src={Image} className="student-photo" alt="Photo de l'étudiant"/> 
+            <img src={etudiant.image} className="student-photo" alt="Photo de l'étudiant"/> 
         </div>
 
         <h1 className="student-title">Fiche étudiant</h1>
